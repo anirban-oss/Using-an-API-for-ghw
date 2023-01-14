@@ -1,0 +1,49 @@
+
+# ===============
+
+# import requests
+
+# for i in range(100):
+# # Make a request to the API
+#   response = requests.get("https://quotesondesign.com/wp-json/wp/v2/posts?orderby=rand")
+  
+#   # Get the JSON data from the response
+#   data = response.json()
+  
+#   # Get the first quote from the data
+#   quote = data[0]['content']['rendered']
+  
+#   # Print the quote
+#   print(quote)
+  
+# ====================
+
+# import requests
+# import json
+
+# # Make an API request to the BrainyQuote API
+# response = requests.get("https://api.brainyquote.com/quotes/random")
+
+# # Parse the JSON response
+# data = json.loads(response.text)
+
+# # Extract the quote and author from the response
+# quote = data["quoteText"]
+# author = data["author"]
+
+# # Print the quote and author
+# print(quote + "\n - " + author)
+
+# =================
+
+# from brainyquote_api import quote
+
+# # Example of this module in use.
+
+# # This is a tool used to scrape the brainyquote.com page for quotes based on the specified category 
+# # It returns a randomised quote based on the maximum page you want the scraping tool to go through
+# # An example of this tool in action would be this
+# quote = quoteCall(category()[79], 3) # This would return the randomised quote from the specified category given by category()[79]
+
+# # This function returns a list of all categories on the website and when you call the quoteCall and use category()[*index value*] then it uses the specified category according to its index value in the list
+# categories = category()
